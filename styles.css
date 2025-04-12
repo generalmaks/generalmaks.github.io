@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.sidebar h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.sidebar h2 {
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.links,
+.references,
+.contact,
+.about-me {
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 70%;
+    padding: 30px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px auto;
+}
+
+.section a {
+    color: white;
+}
+
+.section h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.skill,
+.education {
+    margin-bottom: 10px;
+}
+
+.job-title,
+.edu-degree {
+    font-weight: bold;
+}
+
+.job-company,
+.edu-institution {
+    color: #666;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    width: 100px;
+    display: inline-block;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #eee;
+    margin-left: 10px;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #333;
+}
