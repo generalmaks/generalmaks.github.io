@@ -1,128 +1,137 @@
+/* === Reset & Base === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
+/* === Layout === */
 .resume-container {
-    display: flex;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
-    width: 30%;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.sidebar-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.sidebar h1 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.sidebar h2 {
-    font-size: 1em;
-    color: #aaa;
-    margin-bottom: 10px;
-}
-
-.links,
-.references,
-.contact,
-.about-me {
-    margin-top: 5px;
-    text-align: left;
-    width: 100%;
-}
-
-.links a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 .main-content {
-    width: 70%;
-    padding: 30px;
+  width: 70%;
+  padding: 30px;
 }
 
+/* === Sidebar === */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.sidebar h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.sidebar h2 {
+  font-size: 1em;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.sidebar .section {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar .section a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sidebar .section a:hover {
+  text-decoration: underline;
+}
+
+/* === Main Content === */
 .section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px auto;
-}
-
-.section a {
-    color: white;
+  margin-bottom: 25px;
 }
 
 .section h3 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-top: 30px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
 }
 
+/* === Skills & Education === */
 .skill,
 .education {
-    margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .job-title,
 .edu-degree {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .job-company,
 .edu-institution {
-    color: #666;
+  color: #666;
 }
 
-.skill-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+/* === Technical Skills === */
+.technical-skills ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.skill-name {
-    width: 100px;
-    display: inline-block;
+.technical-skills li {
+  margin-bottom: 6px;
 }
 
-.skill-bar {
-    flex-grow: 1;
-    height: 10px;
-    background-color: #eee;
-    margin-left: 10px;
+/* === Projects === */
+.projects .project {
+  margin-bottom: 20px;
 }
 
-.skill-bar-fill {
-    height: 100%;
-    background-color: #333;
+.projects .project h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.projects .project a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects .project a:hover {
+  text-decoration: underline;
 }
